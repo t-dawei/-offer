@@ -49,4 +49,7 @@ class Solution:
 			timeOf3 -= 1
 		timeOf2 = (length - timeOf3 * 3) / 2
 		return pow(3, timeOf3) * pow(2, timeOf2)
+
+
+		
 		
