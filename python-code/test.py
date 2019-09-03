@@ -6,3 +6,8 @@ a = 1
 b = 1 
 c = 3
 print(a and b & c == 1)
+
+test_sz = [1, '1', '#']
+
+for i in test_sz:
+    print(type(i))

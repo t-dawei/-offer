@@ -11,8 +11,28 @@
 '''
 
 class Solution:
-	def printMatrix(self, matrix):
-		pass
+    def printMatrix(self, matrix, rows, column):
+        if not matrix or rows <= 0 or column <= 0:
+            return
 
-	def printMatrixInCircle(self, matrix, rows, column, start, res):
-		pass
+        start = 0
+        while column > start * 2 and rows > start * 2
+            printMatrixInCircle(matrix, rows, column, start)
+            start += 1
+
+		
+
+    def printMatrixInCircle(self, matrix, rows, column, start, res):
+        endx = column - start - 1
+        endy = rows - start - 1
+        for i in range(start, endx+1):
+            print(matrix[start][i])
+        if start < endy:
+            for i in range(start+1, endy+1):
+                print(matrix[i][endx])
+        if start < endx and start < endy:
+            for i in range(endy-1, start):
+                print(matrix[endy][i])
+        if start < endy and start < endy-1:
+            for i in range(endy-1, start+1):
+                print(matrix[i][start])
